@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Title</title>
+
+    <style>
+        body{
+            font-family: "Comic Sans MS" ,sans-serif;
+            margin: 5px;
+
+
+        }
+        h1{
+            background-color: teal;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<h1>Notes App</h1>
+
+<h2>Take notes and never forget</h2>
+
+<input id="search-text" type="text" placeholder="Filter notes" style="width: 300px;border: 2px solid black">
+<select id="filter-by">
+    <option value="byEdited">Sort by last edites</option>
+    <option value="byCreated">Sort by recently created</option>
+    <option value="alphabetical">Sort alphabetically</option>
+</select>
+<div id="notes">
+
+</div>
+<p class="note">This application was created by Shubham Rokade</p>
+<p class="note">Some note text</p>
+<div>
+    <button id="create-note" class="btn btn-purple">Create Note</button>
+    <button id="remove-all" class="btn btn-light-green">Remove all notes</button>
+</div>
+
+<!--<label>-->
+    <!--<input id="for-fun" type="checkbox">Check for fun-->
+<!--</label>-->
+
+<form id="name-form">
+    <input type="text" placeholder="First name" name="firstName">
+    <button class="btn btn-outline-dark">Submit</button>
+</form>
+
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+
+</body>
+<script src="notes_app.js"></script>
+</html>
