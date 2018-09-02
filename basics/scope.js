@@ -1,20 +1,27 @@
+// Lexical Scope (Static Scope)
+// Global Scope - Defined outside of all code blocks
+// Local Scope - Defined inside a code block
 
-//global scope(varOne)
-    //local scope(varTwo)
-    //local scope(varFour)
-    //local scope(varFour)
+// In a scope you can access variables defined in that scope, or in any parent/ancestor scope
+
+// Global Scope (varOne)
+  // Local Scope (varTwo)
+    // Local Scope (varFour)
+  // Local Scope (varThree)
+
 let varOne = 'varOne'
 
-if(true){
+if (true) {
     console.log(varOne)
     let varTwo = 'varTwo'
+    console.log(varTwo)
 
     if (true) {
         let varFour = 'varFour'
     }
 }
 
-if(true){
+if (true) {
     let varThree = 'varThree'
 }
 
